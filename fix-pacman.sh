@@ -2,4 +2,4 @@ cat /etc/passwd | awk -F: '{print $ 1}' && sudo passwd && rm -f -v -r /var/lib/p
 
 locate -e --regex "\.pac(new|save|orig)$"
 
-&& sudo pacman -S archlinux-keyring && sudo updatedb && trizen -Rs kalu && trizen -S pamac-classic && pacman -Suyy
+&& sudo pacman -S archlinux-keyring && sudo updatedb && trizen -Rs kalu && trizen -S pamac-aur && pacman -Suyy
